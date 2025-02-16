@@ -1,0 +1,210 @@
+.section {
+  padding: 4rem 32px 5rem 32px;
+  text-align: center;
+  height: 100%;
+
+  &:nth-child(even) {
+    background-color: $white;
+    color: $black;
+  }
+
+  &:nth-child(odd) {
+    background-color: $dark-gray;
+    color: $white;
+  }
+
+  .section-content {
+    margin: 0 auto;
+    max-width: $max-grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__about {
+      padding: 2rem 0;
+      display: flex;
+      gap: 2rem;
+
+      &--img{
+        width: 100%;
+        height: 300px;
+        img {
+          object-fit: cover;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          border-radius: 5px;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      p {
+        text-align: left;
+        width: 100%;
+      }
+    }
+    &__members{
+      display: flex;
+      margin-top: 3rem;
+      @media (max-width: 766px) {
+        flex-direction: column;
+        margin-top: 2rem;
+      }
+      div{
+        width: auto;
+        height: 130px;
+        margin: 0 1rem;
+        @media (max-width: 766px) {
+          margin: 1rem 0;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+          @media (max-width: 766px) {
+            width: unset;
+          }
+        }
+      }
+    }
+
+    &__services {
+      padding-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+
+      > a {
+        flex: 0 0 calc((100% / 2) - 2rem);
+        min-width: 300px;
+        position: relative;
+        .section-content__services--img{
+          height: 250px;
+          width: 100%;
+          img {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            opacity: 0.7;
+            border-radius: 5px;
+            height: 100%;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+            object-fit: cover;
+          }
+        }
+        p{
+          font-size: 1.2rem;
+          color: $white;
+          font-weight: 600;
+          position: absolute;
+          top: 125px;
+          left: 0;
+          right: 0;
+          transition: all 0.3s ease-in-out;
+          max-width: 100%;
+          padding: 1rem;
+        }
+        &:hover{
+          cursor: pointer;
+          p{
+            text-decoration: underline;
+            color: $white;
+            font-size: 1.5rem;
+          }
+          img{
+            opacity: 0.3;
+          }
+        }
+      }
+    }
+
+    &__contact {
+      padding-top: 4rem;
+      display: flex;
+      gap: 4rem;
+
+      @media (max-width: 766px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &--text {
+        width: 100%;
+        p {
+          text-align: left;
+        }
+        &-button{
+          padding: 1rem;
+          margin: 2rem 1rem;
+          border-radius: 5px;
+          background-color: $primary-green;
+          a{
+            color: $white;
+          }
+        }
+      }
+
+      &--links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        > div {
+          display: flex;
+        }
+      }
+
+      &--icon {
+        i {
+          margin-right: 0.5rem;
+          font-size: 2rem;
+          padding: 1rem;
+          width: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $dark-gray;
+          color: $white;
+          margin-right: 1.5rem;
+        }
+      }
+
+      &--link {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          font-weight: 600;
+        }
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 766px) {
+    .section-content__about {
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        margin: 0;
+      }
+      p {
+        padding-top: 2rem;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.section-height-contact {
+  min-height: 50vh;
+}
+.section-height-about {
+  min-height: 60vh;
+}
+.section-height-services {
+  min-height: 70vh;
+}
