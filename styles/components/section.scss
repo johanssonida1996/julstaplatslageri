@@ -1,5 +1,5 @@
 .section {
-  padding: 4rem 32px 5rem 32px;
+  padding: 5rem 32px 7rem 32px;
   text-align: center;
   height: 100%;
 
@@ -51,7 +51,7 @@
       div{
         width: auto;
         height: 130px;
-        margin: 0 1rem;
+        margin: 0 2rem;
         @media (max-width: 766px) {
           margin: 1rem 0;
         }
@@ -77,40 +77,60 @@
         flex: 0 0 calc((100% / 2) - 2rem);
         min-width: 300px;
         position: relative;
+
+        @media screen and (max-width: 766px) {
+          flex: 0 0 calc((100%) - 2rem);
+          
+        }
         .section-content__services--img{
           height: 250px;
           width: 100%;
+          border-radius: 5px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          overflow: hidden;
           img {
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            opacity: 0.7;
             border-radius: 5px;
             height: 100%;
             width: 100%;
-            transition: all 0.3s ease-in-out;
+            transition: all .2s linear;
             object-fit: cover;
+            transform: scale(1);
+        
           }
         }
-        p{
-          font-size: 1.2rem;
-          color: $white;
-          font-weight: 600;
+        .section-content__services--text{
           position: absolute;
-          top: 125px;
+          bottom: 5%;
           left: 0;
-          right: 0;
-          transition: all 0.3s ease-in-out;
-          max-width: 100%;
-          padding: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h2{
+            font-size: 1.25rem;
+            color: $black;
+            font-weight: 700;
+            transition: all 0.3s ease-in-out;
+            width: fit-content;
+            max-width: 100%;
+            padding: 0.5rem 1rem;
+            background-color: $primary-green;
+            text-transform: uppercase;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
         }
+
         &:hover{
           cursor: pointer;
-          p{
+          h2{
             text-decoration: underline;
-            color: $white;
-            font-size: 1.5rem;
+          }
+          .section-content__services--img{
+
           }
           img{
-            opacity: 0.3;
+            transform: scale(1.05);
+         
           }
         }
       }
@@ -131,13 +151,20 @@
         p {
           text-align: left;
         }
-        &-button{
-          padding: 1rem;
-          margin: 2rem 1rem;
-          border-radius: 5px;
-          background-color: $primary-green;
+        &-link{
+          margin: 2rem 0;
+          display: flex;
           a{
-            color: $white;
+            color: $black;
+            text-decoration: underline;
+            &::after{
+              content: "\f061";
+              font-family: 'Font Awesome\ 6 Free';
+              font-size: .8rem;
+              font-weight: 900;
+              margin-left: 8px;
+              display: inline-block;
+            }
           }
         }
       }
@@ -207,4 +234,87 @@
 }
 .section-height-services {
   min-height: 70vh;
+}
+
+//section-page
+.section-page-contact{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    width: 100%; 
+    max-width: 1440px; 
+    margin: 0 auto; 
+    padding: 4rem 0;
+
+  > div{
+    height: auto;
+    padding: 0 1.5rem 1.5rem 0;
+    transition: all .2s linear;
+    width: calc(33.333% - 1.5rem); /* Minus gap för att få plats */
+    min-width: 250px; /* Hindrar att de blir för små */
+
+    @media (max-width: 999px) {
+    width: 50%;
+  }
+  
+  @media (max-width: 699px) {
+    width: 100%;
+
+  }
+    .contact-card{
+      display: flex;
+      flex-direction: column;
+      min-height: 20rem;
+      position: relative;
+      transition: all .2s linear;
+      height: 100%;
+  
+      &__img{
+        height: 16.5rem;
+        overflow: hidden;
+        position: relative;
+        &-wrapper{
+          display: flex;
+          height: 100%;
+          justify-content: center;
+          width: 100%;
+          img{
+            display: block;
+            height: auto;
+            max-width: 100%;
+            width: 100%;
+            object-fit: cover;
+            padding: 0 16px;
+          }
+        }
+  
+      }
+      &__content{
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        
+        h3{
+          font-size: 1.25rem;
+          max-width: 40rem;
+          text-align: left;
+          margin: 0;
+        }
+        p{
+          text-align: left;
+          margin-bottom: 0.5rem;
+          font-weight: 600;
+        }
+        a{
+          color: $black;
+          text-align: left;
+          text-decoration: underline;
+        }
+        span{
+          text-align: left;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
 }
