@@ -400,7 +400,11 @@ header.sticky .nav-links a {
   }
 }
 .footer .footer-container .footer-container-colums .footer-column p {
-  color: white !important;
+  color: white;
+}
+.footer .footer-container .footer-container-colums .footer-column code {
+  font-family: "Open Sans", sans-serif;
+  color: white;
 }
 .footer .footer-container .footer-container-colums .footer-column:first-child {
   padding: 1rem 0;

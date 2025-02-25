@@ -32,7 +32,11 @@
           }
         }
         p{
-          color: $white !important;
+          color: $white;
+        }
+        code{
+          font-family: $font-family;
+          color: $white;
         }
 
         &:first-child {
