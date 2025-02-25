@@ -214,6 +214,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+//update iframe
 
+document.addEventListener("DOMContentLoaded", function () {
+    const iframe = document.querySelector(".section-content__findUs iframe");
+
+    function updateIframeSrc() {
+        if (window.innerWidth < 766) {
+            iframe.src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2047.8863611486727!2d15.037866!3d59.11756999999999!3m2!1i600!2i400!4f13.1!3m3!1m2!1s0x465c72db6871cadf%3A0xefd2c62939c74f12!2sJulsta%20126%2C%20692%2093%20Kumla!5e0!3m2!1ssv!2sse!4v1740520905376!5m2!1ssv!2sse";
+            iframe.width = "300";
+            iframe.height = "200";
+        } else {
+            iframe.src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2047.8863611486727!2d15.037866!3d59.11756999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c72db6871cadf%3A0xefd2c62939c74f12!2sJulsta%20126%2C%20692%2093%20Kumla!5e0!3m2!1ssv!2sse!4v1740520905376!5m2!1ssv!2sse";
+            iframe.width = "600";
+            iframe.height = "450";
+        }
+    }
+
+    // Kör funktionen vid sidladdning
+    updateIframeSrc();
+
+    // Kör funktionen vid fönsterstorleksändring
+    window.addEventListener("resize", updateIframeSrc);
+});
 
 

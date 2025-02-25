@@ -399,6 +399,9 @@ header.sticky .nav-links a {
     font-size: 1.3rem;
   }
 }
+.footer .footer-container .footer-container-colums .footer-column p {
+  color: white !important;
+}
 .footer .footer-container .footer-container-colums .footer-column:first-child {
   padding: 1rem 0;
 }

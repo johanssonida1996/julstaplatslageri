@@ -31,6 +31,9 @@
             font-size: $h3-mobile;
           }
         }
+        p{
+          color: $white !important;
+        }
 
         &:first-child {
           padding: 1rem 0;
