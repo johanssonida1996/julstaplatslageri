@@ -29,8 +29,7 @@ header {
          list-style: none;
          display: flex;
          gap: 1rem;
-
-         a {
+         a{
             color: $white;
             text-decoration: none;
             font-size: $normal;
@@ -65,6 +64,141 @@ header {
             &.active::after {
                width: 100%;
             }
+         }
+      }
+
+      .nav-links-dropdown{
+         position: relative;
+         position: relative;
+         .dropdown-menu{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+         }
+
+         button{
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            font-family: $font-family;
+            cursor: pointer;
+            outline: inherit;
+            color: $white;
+            text-decoration: none;
+            font-size: $normal;
+            font-weight: 500;
+            position: relative;
+            text-transform: uppercase;
+            padding-bottom: 0.2rem;
+
+            &::after{
+               content: "\f078";
+               font-family: 'Font Awesome\ 6 Free';
+               font-size: .8rem;
+               font-weight: 900;
+               margin-left: 8px;
+               display: inline-block;
+               transition: transform 0.3s ease-in-out;
+            }
+            &.active{
+               &::after{
+                  transform: rotate(180deg);
+               }
+            }
+         }
+
+         &:hover {
+            text-decoration: none !important;
+         }
+
+         &::before,
+         &::after {
+            transition: all 0.5s;
+         }
+
+         &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: 0;
+            content: ".";
+            color: transparent;
+            background: $primary-green;
+            height: 2px;
+         }
+
+         &:hover::after,
+         &.active::after {
+            width: 100%;
+         }
+
+         &__content{
+            display: none;
+         }
+         &__content.show{
+            display: block;
+
+            ul{
+               list-style: none;
+               background-color: $dark-gray;
+               position: absolute;
+               top: 35px;
+               left: -56px;
+               right: -90px;
+               border-radius: 6px;
+               li{
+                  padding: 1rem;
+                  font-size: 1rem;
+               }
+            }
+         }
+
+         @media (max-width: 766px) {
+               &::after{
+                  display: none;
+               }
+               button{
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 1.2rem;
+                  &::after{
+                     content: "\2b";
+                     font-size: 1rem;
+                  }
+                  &.active{
+                     &::after{
+                        content: "\f068";
+                     }
+                  }
+               }
+               li{
+                  display: flex;
+                  justify-content: space-between;
+               }
+               &__content.show{
+                  display: block;
+      
+                  ul{
+                     list-style: none;
+                     background-color: $black;
+                     position: unset;
+                     border-radius: 0px;
+                     margin: 0 -24px;
+                     li{
+                        padding: 1rem 24px;
+                        &.active{
+                           background: $primary-green;
+                        }
+                        a{
+                           font-size: 1rem;
+                           &::after{
+                              font-size: 1rem;
+                           }
+                        }
+                     }
+                  }
+               }
          }
       }
 
@@ -159,17 +293,16 @@ header {
       opacity: 0;
       flex-direction: column;
       position: absolute;
-      top: 100%;
+      top: 99%;
       right: 0;
       background-color: $dark-gray;
       width: 100%;
-      padding: 1rem 16px;
-      gap: 1.5rem;
+      padding: 1rem 24px;
       transform: scaleY(0);
       transform-origin: top;
       transition:
-         transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1),
-         opacity 0.4s ease;
+      transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1),
+      opacity 0.4s ease;
 
       .navbar.active & {
          visibility: visible;

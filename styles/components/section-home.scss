@@ -162,6 +162,26 @@
     background-image: url("https://plus.unsplash.com/premium_photo-1710282122654-604457e6cc95?q=80&w=2050&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
   }
 }
+.snoskottning{
+  &::before {
+    content: "";
+    background-image: url("https://images.unsplash.com/photo-1612631878055-e94fafe6896d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+  }
+}
+.taksakerhet{
+  &::before {
+    content: "";
+    background-image: url("https://plus.unsplash.com/premium_photo-1682617326551-4749611516f6?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+  }
+}
+.takmalning{
+  &::before {
+    content: "";
+    background-image: url("https://plus.unsplash.com/premium_photo-1683133225533-46959d335a55?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+  }
+}
+
+
 .contact{
   &::before {
     content: "";

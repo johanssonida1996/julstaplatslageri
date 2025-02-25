@@ -8,6 +8,34 @@ window.addEventListener('scroll', function () {
     }
 });
 
+//toggle dropdown
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdownToggle = document.querySelector(".nav-links-dropdown__button");
+    const dropdownMenu = document.querySelector(".nav-links-dropdown__content");
+    const dropdownlistelement = document.querySelector(".nav-links-dropdown");
+    const dropdownMenuLi = document.querySelector(".dropdown-menu-li");
+    
+  
+    dropdownToggle.addEventListener("click", function (e) {
+      e.preventDefault(); // Förhindra navigation
+      dropdownMenu.classList.toggle("show");
+      dropdownToggle.classList.toggle('active');
+      dropdownlistelement.classList.toggle('active');
+      dropdownMenuLi.classList.toggle('active');
+    });
+  
+    // Klick utanför stänger dropdown
+    document.addEventListener("click", function (e) {
+      if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.remove("show");
+        dropdownToggle.classList.remove('active');
+        dropdownlistelement.classList.remove('active');
+        dropdownMenuLi.classList.remove('active');
+      }
+  
+    });
+  });
+
 // Hämta alla länkar i navigeringen
 const links = document.querySelectorAll('nav ul li a');
 

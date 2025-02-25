@@ -1,0 +1,29 @@
+.services{
+   .section-content{
+      &__about{
+         &--img{
+            height: 400px;
+         }
+         &--content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            text-align: left;
+
+            h2{
+               font-size: $h3;
+            }
+
+            @media (max-width: 766px) {
+               p{
+                  padding: 0;
+               }
+               h2{
+                  font-size: $h3-mobile;
+               }
+            }
+         }
+      }
+   }
+}

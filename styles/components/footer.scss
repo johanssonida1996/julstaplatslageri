@@ -24,6 +24,14 @@
         min-width: 250px;
         padding: 1rem 32px;
 
+        h2{
+          font-size: $h3;
+
+          @media (max-width: 766px) {
+            font-size: $h3-mobile;
+          }
+        }
+
         &:first-child {
           padding: 1rem 0;
         }

@@ -45,9 +45,9 @@ a:hover {
 
 .skip-link {
   position: absolute;
-  top: -40px;
-  left: 10px;
-  background-color: #000;
+  top: -50px;
+  left: 20px;
+  background-color: #74aa50;
   color: #fff;
   padding: 8px 16px;
   z-index: 100;
@@ -134,6 +134,124 @@ header .navbar .nav-links a::after {
 header .navbar .nav-links a:hover::after, header .navbar .nav-links a.active::after {
   width: 100%;
 }
+header .navbar .nav-links-dropdown {
+  position: relative;
+  position: relative;
+}
+header .navbar .nav-links-dropdown .dropdown-menu {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+header .navbar .nav-links-dropdown button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  outline: inherit;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 0.2rem;
+}
+header .navbar .nav-links-dropdown button::after {
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin-left: 8px;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+header .navbar .nav-links-dropdown button.active::after {
+  transform: rotate(180deg);
+}
+header .navbar .nav-links-dropdown:hover {
+  text-decoration: none !important;
+}
+header .navbar .nav-links-dropdown::before, header .navbar .nav-links-dropdown::after {
+  transition: all 0.5s;
+}
+header .navbar .nav-links-dropdown::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 0;
+  content: ".";
+  color: transparent;
+  background: #74aa50;
+  height: 2px;
+}
+header .navbar .nav-links-dropdown:hover::after, header .navbar .nav-links-dropdown.active::after {
+  width: 100%;
+}
+header .navbar .nav-links-dropdown__content {
+  display: none;
+}
+header .navbar .nav-links-dropdown__content.show {
+  display: block;
+}
+header .navbar .nav-links-dropdown__content.show ul {
+  list-style: none;
+  background-color: #333333;
+  position: absolute;
+  top: 35px;
+  left: -56px;
+  right: -90px;
+  border-radius: 6px;
+}
+header .navbar .nav-links-dropdown__content.show ul li {
+  padding: 1rem;
+  font-size: 1rem;
+}
+@media (max-width: 766px) {
+  header .navbar .nav-links-dropdown::after {
+    display: none;
+  }
+  header .navbar .nav-links-dropdown button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+  }
+  header .navbar .nav-links-dropdown button::after {
+    content: "+";
+    font-size: 1rem;
+  }
+  header .navbar .nav-links-dropdown button.active::after {
+    content: "\f068";
+  }
+  header .navbar .nav-links-dropdown li {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .navbar .nav-links-dropdown__content.show {
+    display: block;
+  }
+  header .navbar .nav-links-dropdown__content.show ul {
+    list-style: none;
+    background-color: black;
+    position: unset;
+    border-radius: 0px;
+    margin: 0 -24px;
+  }
+  header .navbar .nav-links-dropdown__content.show ul li {
+    padding: 1rem 24px;
+  }
+  header .navbar .nav-links-dropdown__content.show ul li.active {
+    background: #74aa50;
+  }
+  header .navbar .nav-links-dropdown__content.show ul li a {
+    font-size: 1rem;
+  }
+  header .navbar .nav-links-dropdown__content.show ul li a::after {
+    font-size: 1rem;
+  }
+}
 header .navbar .menu-icon #menu-icon .bar {
   background-color: white;
   height: 2px;
@@ -208,12 +326,11 @@ header.sticky .nav-links a {
     opacity: 0;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    top: 99%;
     right: 0;
     background-color: #333333;
     width: 100%;
-    padding: 1rem 16px;
-    gap: 1.5rem;
+    padding: 1rem 24px;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.4s ease;
@@ -273,6 +390,14 @@ header.sticky .nav-links a {
   flex: 1;
   min-width: 250px;
   padding: 1rem 32px;
+}
+.footer .footer-container .footer-container-colums .footer-column h2 {
+  font-size: 1.7rem;
+}
+@media (max-width: 766px) {
+  .footer .footer-container .footer-container-colums .footer-column h2 {
+    font-size: 1.3rem;
+  }
 }
 .footer .footer-container .footer-container-colums .footer-column:first-child {
   padding: 1rem 0;
@@ -791,9 +916,46 @@ header.sticky .nav-links a {
   background-image: url("https://plus.unsplash.com/premium_photo-1710282122654-604457e6cc95?q=80&w=2050&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
 }
 
+.snoskottning::before {
+  content: "";
+  background-image: url("https://images.unsplash.com/photo-1612631878055-e94fafe6896d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+}
+
+.taksakerhet::before {
+  content: "";
+  background-image: url("https://plus.unsplash.com/premium_photo-1682617326551-4749611516f6?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+}
+
+.takmalning::before {
+  content: "";
+  background-image: url("https://plus.unsplash.com/premium_photo-1683133225533-46959d335a55?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+}
+
 .contact::before {
   content: "";
   background-image: url("https://plus.unsplash.com/premium_photo-1666298863696-8e8da5d85f2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+}
+
+.services .section-content__about--img {
+  height: 400px;
+}
+.services .section-content__about--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: left;
+}
+.services .section-content__about--content h2 {
+  font-size: 1.7rem;
+}
+@media (max-width: 766px) {
+  .services .section-content__about--content p {
+    padding: 0;
+  }
+  .services .section-content__about--content h2 {
+    font-size: 1.3rem;
+  }
 }
 
 * {
@@ -842,9 +1004,9 @@ a:hover {
 
 .skip-link {
   position: absolute;
-  top: -40px;
-  left: 10px;
-  background-color: #000;
+  top: -50px;
+  left: 20px;
+  background-color: #74aa50;
   color: #fff;
   padding: 8px 16px;
   z-index: 100;

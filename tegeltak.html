@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <a data-target="about" href="javascript:void(0)" class="skip-link">Hoppa till innehåll</a>
     <header class="header">
+      <a data-target="about" href="#about" class="skip-link">Hoppa till innehåll</a>
       <nav class="navbar">
         <div class="logo">
           <img src="./assets/logo/logo.webp" alt="logotyp för företaget" />
@@ -23,9 +23,19 @@
           <div class="bar bar3"></div>
         </div>
         <ul class="nav-links">
-          <li><a  href="index.html">Hem</a></li>
-          <li><a  href="services.html">Tjänster</a></li>
-          <li><a  href="contact.html">Kontakt</a></li>
+          <li class="nav-links--li"><a  href="index.html">Hem</a></li>
+          <li class="nav-links--li nav-links-dropdown">
+            <button id="nav-dropdown__button" class="nav-links-dropdown__button">Tjänster</button>
+            <div class="nav-links-dropdown__content">
+              <ul class="dropdown-menu">
+                <li><a href="tegeltak.html">Tegeltak</a></li>
+                <li><a href="takmalning.html">Takmålning</a></li>
+                <li><a href="taksakerhet.html">Taksäkerhet</a></li>
+                <li><a href="snoskottning.html">Snöskottning</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-links--li"><a  href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
     </header>
@@ -35,20 +45,23 @@
           <h1>Tegeltak</h1>
         </div>
       </section>
-      <section id="about" class="section section-height-about">
+      <section id="about" class="section section-height-about services">
         <div class="section-content">
           <div class="section-content__about">
             <div class="section-content__about--img">
-            <img src="https://images.unsplash.com/photo-1518736346281-76873166a64a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bild på tegeltak" />
+              <img src="https://images.unsplash.com/photo-1518736346281-76873166a64a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bild på tegeltak" />
             </div>
+            <div class="section-content__about--content">
+              <h2>
+                Tegeltak
+              </h2>
             <p>
-              Vi har lång erfarenhet av tegeltak och kan erbjuda en helhetslösning där vi utför ett komplett arbete – från rivning och byte av tegel till allt som hör därtill.
-              Vid behov kompletterar vi även med plåtarbeten, så att du får en hållbar och estetiskt tilltalande lösning. 
+              Vi har lång erfarenhet av tegeltak och kan erbjuda en helhetslösning där vi utför ett komplett arbete – från rivning och byte av tegel till allt som hör därtill. Vid behov kompletterar vi även med plåtarbeten, så att du får en hållbar och estetiskt tilltalande lösning.
               <br />
               <br />
-              Kontakta oss för en offert – vi erbjuder kompletta taklösningar där vi hanterar både tegel, trä och plåt. Givetvis hjälper vi även till med ROT-avdraget.
-              Vårt mål är att du ska få ett vackert och problemfritt tak, utan bekymmer längs vägen.
+              Kontakta oss för en offert – vi erbjuder kompletta taklösningar där vi hanterar både tegel, trä och plåt. Givetvis hjälper vi även till med ROT-avdraget. Vårt mål är att du ska få ett vackert och problemfritt tak, utan bekymmer längs vägen.
             </p>
+            </div>
           </div>
         </div>
       </section>
@@ -57,7 +70,7 @@
       <div class="footer-container">
         <div class="footer-container-colums">
           <div class="footer-column">
-            <h3>Julsta Plåtslageri AB</h3>
+            <h2>Julsta Plåtslageri AB</h2>
             <div class="footer-logo">
               <p>Organisationsnummer: 559090-7761</p>
               <img src="./assets/logo/logo.webp" alt="logotyp för företaget" />
@@ -81,16 +94,19 @@
             </div>
           </div>
           <div class="footer-column">
-            <h3>Sociala medier</h3>
+            <h2>Sociala medier</h2>
             <div class="footer-social-icons">
+              <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                <p>Julsta Plåtslageri på Facebook</p>
+              </a>
               <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <p>Julsta Plåtslageri på Instagram</p>
               </a>
               <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
                 <i class="fab fa-linkedin" aria-hidden="true"></i>
+                <p>Julsta Plåtslageri på LinkedIn</p>
               </a>
             </div>
           </div>
@@ -100,6 +116,6 @@
         </div>
       </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
