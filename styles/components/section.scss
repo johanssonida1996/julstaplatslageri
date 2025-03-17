@@ -44,16 +44,19 @@
     &__members{
       display: flex;
       margin-top: 3rem;
+      justify-content: center;
+      align-items: center;
       @media (max-width: 766px) {
         flex-direction: column;
         margin-top: 2rem;
       }
       div{
-        width: auto;
+        max-width: 50%;
         height: 130px;
         margin: 0 2rem;
         @media (max-width: 766px) {
           margin: 1rem 0;
+          max-width: 100%;
         }
         img{
           width: 100%;
@@ -74,7 +77,7 @@
       justify-content: center;
 
       > a {
-        flex: 0 0 calc((100% / 2) - 2rem);
+        flex: 0 0 calc((100% / 3) - 2rem);
         min-width: 300px;
         position: relative;
 
@@ -188,9 +191,10 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          background-color: $dark-gray;
-          color: $white;
+          background-color: $primary-green;
+          color: $black;
           margin-right: 1.5rem;
+          border-radius: 5px;
         }
       }
 
@@ -245,16 +249,16 @@
     max-width: 1440px; 
     margin: 0 auto; 
     padding: 4rem 0;
+    column-gap: 1rem;
 
   > div{
     height: auto;
-    padding: 0 1.5rem 1.5rem 0;
     transition: all .2s linear;
-    width: calc(33.333% - 1.5rem); /* Minus gap för att få plats */
+    width: calc(33.333% - 1rem); /* Minus gap för att få plats */
     min-width: 250px; /* Hindrar att de blir för små */
 
     @media (max-width: 999px) {
-    width: 50%;
+      width: calc(50% - 1rem);
   }
   
   @media (max-width: 699px) {
@@ -270,7 +274,7 @@
       height: 100%;
   
       &__img{
-        height: 16.5rem;
+        height: 30rem;
         overflow: hidden;
         position: relative;
         &-wrapper{
@@ -284,35 +288,44 @@
             max-width: 100%;
             width: 100%;
             object-fit: cover;
-            padding: 0 16px;
           }
         }
   
       }
       &__content{
-        padding: 24px 16px;
         display: flex;
         flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        background-color: $primary-green;
+        left: 0px;
+        right: 0px;
+        align-items: center;
+        min-height: 9rem;
+        justify-content: center;
+        padding: 16px;
         
         h3{
-          font-size: 1.25rem;
+          font-size: 1rem;
           max-width: 40rem;
           text-align: left;
           margin: 0;
         }
         p{
           text-align: left;
-          margin-bottom: 0.5rem;
           font-weight: 600;
+          font-size: 0.875rem;
         }
         a{
           color: $black;
           text-align: left;
           text-decoration: underline;
+          font-size: 0.875rem;
         }
         span{
-          text-align: left;
-          margin-top: 0.5rem;
+          text-align: center;
+          margin: 0 16px;
+          font-size: 0.875rem;
         }
       }
     }

@@ -221,14 +221,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateIframeSrc() {
         if (window.innerWidth < 766) {
-            iframe.src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2047.8863611486727!2d15.037866!3d59.11756999999999!3m2!1i600!2i400!4f13.1!3m3!1m2!1s0x465c72db6871cadf%3A0xefd2c62939c74f12!2sJulsta%20126%2C%20692%2093%20Kumla!5e0!3m2!1ssv!2sse!4v1740520905376!5m2!1ssv!2sse";
+            iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d830.3255437660231!2d15.045592991644623!3d59.12107514204667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c72c575887285%3A0x18920c27de8cd0c1!2sJulsta%20532%2C%20692%2093%20Kumla!5e1!3m2!1ssv!2sse!4v1742240948232!5m2!1ssv!2sse";
             iframe.width = "300";
             iframe.height = "200";
         } else {
-            iframe.src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2047.8863611486727!2d15.037866!3d59.11756999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c72db6871cadf%3A0xefd2c62939c74f12!2sJulsta%20126%2C%20692%2093%20Kumla!5e0!3m2!1ssv!2sse!4v1740520905376!5m2!1ssv!2sse";
+            iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d830.3255437660231!2d15.045592991644623!3d59.12107514204667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c72c575887285%3A0x18920c27de8cd0c1!2sJulsta%20532%2C%20692%2093%20Kumla!5e1!3m2!1ssv!2sse!4v1742240948232!5m2!1ssv!2sse";
             iframe.width = "600";
             iframe.height = "450";
         }
+
+        
     }
 
     // Kör funktionen vid sidladdning
