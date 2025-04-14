@@ -16,7 +16,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+    background-image: url("/assets/metalworker_colored.webp"); /* Ange din bakgrundsbild */
     background-size: cover;
     background-position: center;
     opacity: 0.4;
@@ -103,7 +103,7 @@
     bottom: 0;
     background-size: cover;
     background-position: center;
-    opacity: 0.2;
+    opacity: 0.4;
     z-index: 1;
   }
 
@@ -159,32 +159,34 @@
 .platslageri{
   &::before {
     content: "";
-    background-image: url("https://plus.unsplash.com/premium_photo-1677323396129-0a5d464eb491?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+    background-image: url("/assets/metalworker_background.webp"); /* Ange din bakgrundsbild */
   }
 }
 
 .tegeltak{
   &::before {
     content: "";
-    background-image: url("https://plus.unsplash.com/premium_photo-1710282122654-604457e6cc95?q=80&w=2050&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+    background-image: url("/assets/realistic_tile_roof_installation.webp"); /* Ange din bakgrundsbild */
   }
 }
 .snoskottning{
   &::before {
     content: "";
-    background-image: url("https://images.unsplash.com/photo-1612631878055-e94fafe6896d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+    background-image: url("/assets/snoskottning_realistic_background.webp"); /* Ange din bakgrundsbild */
+    background-position: 50% 30%;
   }
 }
 .taksakerhet{
   &::before {
     content: "";
-    background-image: url("https://plus.unsplash.com/premium_photo-1682617326551-4749611516f6?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+    background-image: url("/assets/taksakerhet_with_workers.webp"); /* Ange din bakgrundsbild */
+    background-position: 50% 60%;
   }
 }
 .takmalning{
   &::before {
     content: "";
-    background-image: url("https://plus.unsplash.com/premium_photo-1683133225533-46959d335a55?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+    background-image: url("/assets/roof_cleaning_background.webp"); /* Ange din bakgrundsbild */
   }
 }
 
@@ -192,6 +194,6 @@
 .contact{
   &::before {
     content: "";
-    background-image: url("https://plus.unsplash.com/premium_photo-1666298863696-8e8da5d85f2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ange din bakgrundsbild */
+    background-image: url("/assets/img/contact.webp"); /* Ange din bakgrundsbild */
   }
 }
