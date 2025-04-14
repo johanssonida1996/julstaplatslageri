@@ -811,7 +811,7 @@ header.sticky .nav-links a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/assets/metalworker_colored.webp"); /* Ange din bakgrundsbild */
+  background-image: url("https://raw.githubusercontent.com/johanssonida1996/julstaplatslageri/refs/heads/main/assets/metalworker_colored.webp"); /* Ange din bakgrundsbild */
   background-size: cover;
   background-position: center;
   opacity: 0.4;
