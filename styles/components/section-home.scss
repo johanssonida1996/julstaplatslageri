@@ -159,40 +159,35 @@
 .platslageri{
   &::before {
     content: "";
-    background-image: url("/assets/metalworker_background.webp"),
-    url("https://github.com/johanssonida1996/julstaplatslageri/blob/main/assets/metalworker_background.webp"); 
+    background-image: url("https://raw.githubusercontent.com/johanssonida1996/julstaplatslageri/refs/heads/main/assets/metalworker_background.webp"); 
   }
 }
 
 .tegeltak{
   &::before {
     content: "";
-    background-image: url("/assets/realistic_tile_roof_installation.webp"),
-    url("https://github.com/johanssonida1996/julstaplatslageri/blob/main/assets/realistic_tile_roof_installation.webp");
+    background-image: url("https://raw.githubusercontent.com/johanssonida1996/julstaplatslageri/refs/heads/main/assets/realistic_tile_roof_installation.webp");
 
   }
 }
 .snoskottning{
   &::before {
     content: "";
-    background-image: url("/assets/snoskottning_realistic_background.webp"),
-    url("https://github.com/johanssonida1996/julstaplatslageri/blob/main/assets/snoskottning_realistic_background.webp");
+    background-image: url("https://raw.githubusercontent.com/johanssonida1996/julstaplatslageri/refs/heads/main/assets/snoskottning_realistic_background.webp");
     background-position: 50% 30%;
   }
 }
 .taksakerhet{
   &::before {
     content: "";
-    background-image: url("/assets/taksakerhet_with_workers.webp"),
-    url("https://github.com/johanssonida1996/julstaplatslageri/blob/main/assets/taksakerhet_with_workers.webp");
+    background-image: url("https://raw.githubusercontent.com/johanssonida1996/julstaplatslageri/refs/heads/main/assets/taksakerhet_with_workers.webp");
     background-position: 50% 60%;
   }
 }
 .takmalning{
   &::before {
     content: "";
-    background-image: url("/assets/roof_cleaning_background.webp"),
-    url("https://github.com/johanssonida1996/julstaplatslageri/blob/main/assets/roof_cleaning_background.webp");
+    background-image: url("https://raw.githubusercontent.com/johanssonida1996/julstaplatslageri/refs/heads/main/assets/roof_cleaning_background.webp");
   }
 }
 
@@ -200,7 +195,6 @@
 .contact{
   &::before {
     content: "";
-    background-image: url("/assets/img/contact.webp"),
-    url("https://github.com/johanssonida1996/julstaplatslageri/blob/main/assets/img/contact.webp");
+    background-image: url("https://raw.githubusercontent.com/johanssonida1996/julstaplatslageri/refs/heads/main/assets/img/contact.webp");
   }
 }
