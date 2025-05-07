@@ -365,6 +365,10 @@ header.sticky .nav-links a {
     display: none;
   }
 }
+.menu-open {
+  background-color: #333333;
+}
+
 .footer {
   background-color: #333333;
   color: white;

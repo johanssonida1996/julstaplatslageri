@@ -122,6 +122,7 @@ function handleClickOutside(e) {
 }
 
 function toggleMenu() {
+  const header = document.querySelector(".header");
   if (isMobileView()) {
     navbar.classList.toggle("active");
     if (navbar.classList.contains("active")) {
@@ -131,12 +132,14 @@ function toggleMenu() {
       setFocusableElements();
       firstFocusableElement.focus();
       document.addEventListener("keydown", trapFocus);
+      header.classList.add("menu-open");
     } else {
       navLinks.style.visibility = "hidden";
       menuIcon.setAttribute("aria-label", "Öppna menyn");
       menuIcon.setAttribute("aria-expanded", "false");
       document.removeEventListener("keydown", trapFocus);
       menuIcon.focus();
+      header.classList.remove("menu-open");
     }
   }
 }
