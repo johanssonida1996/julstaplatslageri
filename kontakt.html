@@ -1,175 +1,234 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontakta oss</title>
-    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
-    <header class="header">
-      <a data-target="contact" href="#contact" class="skip-link">Hoppa till innehåll</a>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="index.html">
-            <img src="./assets/logo/logo.webp" alt="logotyp för företaget" />
-          </a>
-        </div>
-        <div class="menu-icon" id="menu-icon" role="button" aria-label="Öppna menyn" aria-expanded="false" tabindex="0">
-          <div class="bar bar1"></div>
-          <div class="bar bar2"></div>
-          <div class="bar bar3"></div>
-        </div>
-        <ul class="nav-links">
-          <li class="nav-links--li"><a  href="index.html">Hem</a></li>
-          <li class="nav-links--li nav-links-dropdown">
-            <button id="nav-dropdown__button" class="nav-links-dropdown__button">Tjänster</button>
-            <div class="nav-links-dropdown__content">
-              <ul class="dropdown-menu">
-                <li><a href="platslageri.html">Plåtslageri</a></li>
-                <li><a href="tegeltak.html">Tegeltak</a></li>
-                <li><a href="takmalning.html">Takmålning</a></li>
-                <li><a href="taksakerhet.html">Taksäkerhet</a></li>
-                <li><a href="snoskottning.html">Snöskottning</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-links--li"><a  href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main id="main-content">
-      <section id="home" class="section section-page contact">
-        <div class="home-content">
-          <h1>Kontakta oss</h1>
-        </div>
-      </section>
-      <section id="contact" class="section section-height-contact">
-         <div class="section-content">
-           <h2>Vi på Julsta Plåtslageri</h2>
-            <div class="section-page-contact">
-              <div>
-                <div class="contact-card">
-                  <div class="contact-card__img">
-                    <div class="contact-card__img-wrapper">
-                      <img src="./assets/staff/IMG_3728.webp">
-                    </div>
-                  </div>
-                  <div class="contact-card__content">
-                    <h3>Johan Fall, VD</h3>
-                    <span>Kontakta mig för rådgivning, offert eller om du vill veta mer om våra tjänster</span>
-                    <a href="tel:+46708240040">070-824 00 40</a>
-                    <a href="mailto:johan@julstaplatslageri.se">johan@julstaplatslageri.se</a>
-             
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="contact-card">
-                  <div class="contact-card__img">
-                    <div class="contact-card__img-wrapper">
-                      <img src="./assets/staff/IMG_3721.webp">
-                    </div>
-                  </div>
-                  <div class="contact-card__content">
-                    <h3>Isac Fall</h3>
-                    <p>Plåtslagare</p>
-                    isac@julstaplatslageri.se
-                    <a href="tel:+46722075551">072-207 55 51</a>
-                    <a href="mailto:isac@julstaplatslageri.se">isac@julstaplatslageri.se</a>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="contact-card">
-                  <div class="contact-card__img">
-                    <div class="contact-card__img-wrapper">
-                      <img src="./assets/staff/IMG_3717.webp">
-                    </div>
-                  </div>
-                  <div class="contact-card__content">
-                    <h3>Alexander Dahlgren</h3>
-                    <p>Plåtslagare</p>
-                    <a href="tel:+46702902500">070-290 25 00</a>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="contact-card">
-                  <div class="contact-card__img">
-                    <div class="contact-card__img-wrapper">
-                      <img src="./assets/staff/IMG_3722.webp">
-                    </div>
-                  </div>
-                  <div class="contact-card__content">
-                    <h3>Hjalmar Ljunggren</h3>
-                    <p>Plåtslagare</p>
-                    <a href="tel:+46702902500">070-597 33 00</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-           </div>
-         </div>
-         <div class="section-content">
-          <h2>Hitta till oss</h2>
-          <div class="section-content__findUs">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d830.3255437660231!2d15.045592991644623!3d59.12107514204667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c72c575887285%3A0x18920c27de8cd0c1!2sJulsta%20532%2C%20692%2093%20Kumla!5e1!3m2!1ssv!2sse!4v1742240948232!5m2!1ssv!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakta oss</title>
+  <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a data-target="contact" href="#contact" class="skip-link">Hoppa till innehåll</a>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./assets/logo/logo.webp" alt="logotyp för företaget" />
+        </a>
+      </div>
+      <div class="menu-icon" id="menu-icon" role="button" aria-label="Öppna menyn" aria-expanded="false" tabindex="0">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-links--li"><a href="index.html">Hem</a></li>
+        <li class="nav-links--li nav-links-dropdown">
+          <button id="nav-dropdown__button" class="nav-links-dropdown__button">Tjänster</button>
+          <div class="nav-links-dropdown__content">
+            <ul class="dropdown-menu">
+              <li><a href="platslageri.html">Plåtslageri</a></li>
+              <li><a href="tegeltak.html">Tegeltak</a></li>
+              <li><a href="takmalning.html">Takmålning</a></li>
+              <li><a href="taksakerhet.html">Taksäkerhet</a></li>
+              <li><a href="snoskottning.html">Snöskottning</a></li>
+            </ul>
           </div>
-        </div>
-       </section>
-    </main>
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-container-colums">
-          <div class="footer-column">
-            <h2>Julsta Plåtslageri AB</h2>
-            <div class="footer-logo">
-              <p>Organisationsnummer: <code>559090-7761</code></p>
-              <img src="./assets/logo/logo.webp" alt="logotyp för företaget" />
-            </div>
-          </div>
-          <div class="footer-column">
-            <h3>Kontakt</h3>
-            <div class="footer-contact">
-              <div>
-                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        </li>
+        <li class="nav-links--li"><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section id="home" class="section section-page contact">
+      <div class="home-content">
+        <h1>Kontakta oss</h1>
+      </div>
+    </section>
+    <section id="contact" class="section section-height-contact">
+      <div class="section-content">
+        <h2>Vi på Julsta Plåtslageri</h2>
+        <div class="section-page-contact">
+          <div>
+            <div class="contact-card">
+              <div class="contact-card__img">
+                <div class="contact-card__img-wrapper">
+                  <img src="./assets/staff/IMG_3728.webp">
+                </div>
+              </div>
+              <div class="contact-card__content">
+                <h3>Johan Fall, VD</h3>
+                <span>Kontakta mig för rådgivning, offert eller om du vill veta mer om våra tjänster</span>
                 <a href="tel:+46708240040">070-824 00 40</a>
-              </div>
-              <div>
-                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:example@example.com">johan@julstaplatslageri.se</a>
-              </div>
-              <div>
-                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                <a href="https://maps.app.goo.gl/FcVPWoUhqi2QPki37" target="_blank">Julsta Esplunda 532, 69293 Kumla</a>
+                <a href="mailto:johan@julstaplatslageri.se">johan@julstaplatslageri.se</a>
+
               </div>
             </div>
           </div>
-          <div class="footer-column">
-            <h2>Sociala medier</h2>
-            <div class="footer-social-icons">
-              <a href="https://www.facebook.com/share/1EiE6FBZFQ/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
-                <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                <p>Julsta Plåtslageri på Facebook</p>
-              </a>
-              <a href="https://www.instagram.com/julsta_platslageri?igsh=ajk3YjlqMmlhbGpw&utm_source=qr" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram" aria-hidden="true"></i>
-                <p>Julsta Plåtslageri på Instagram</p>
-              </a>
+          <div>
+            <div class="contact-card">
+              <div class="contact-card__img">
+                <div class="contact-card__img-wrapper">
+                  <img src="./assets/staff/IMG_3721.webp">
+                </div>
+              </div>
+              <div class="contact-card__content">
+                <h3>Isac Fall</h3>
+                <p>Plåtslagare</p>
+                <a href="tel:+46722075551">072-207 55 51</a>
+                <a href="mailto:isac@julstaplatslageri.se">isac@julstaplatslageri.se</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="footer-container-text">
-          <p>© Copyright 2025</p>
+          <div>
+            <div class="contact-card">
+              <div class="contact-card__img">
+                <div class="contact-card__img-wrapper">
+                  <img src="./assets/staff/IMG_3717.webp">
+                </div>
+              </div>
+              <div class="contact-card__content">
+                <h3>Alexander Dahlgren</h3>
+                <p>Plåtslagare</p>
+                <a href="tel:+46702902500">070-290 25 00</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="contact-card">
+              <div class="contact-card__img">
+                <div class="contact-card__img-wrapper">
+                  <img src="./assets/staff/IMG_3722.webp">
+                </div>
+              </div>
+              <div class="contact-card__content">
+                <h3>Hjalmar Ljunggren</h3>
+                <p>Plåtslagare</p>
+                <a href="tel:+46702902500">070-597 33 00</a>
+              </div>
+            </div>
+          </div>
+                <div>
+        <div class="contact-card">
+          <div class="contact-card__img">
+            <div class="contact-card__img-wrapper">
+              <img src="./assets/staff/Kenneth-img.jpg">
+            </div>
+          </div>
+          <div class="contact-card__content">
+            <h3>Kenneth Andersson</h3>
+            <p>Plåtslagare</p>
+          </div>
         </div>
       </div>
-    </footer>
-     <script src="scripts.js"></script>
-  </body>
+      <div>
+        <div class="contact-card">
+          <div class="contact-card__img">
+            <div class="contact-card__img-wrapper">
+              <img src="./assets/staff/Joel.jpg">
+            </div>
+          </div>
+          <div class="contact-card__content">
+            <h3>Joel Andersson</h3>
+            <p>Plåtslagare</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-card">
+          <div class="contact-card__img">
+            <div class="contact-card__img-wrapper">
+              <img src="./assets/staff/Linus.jpg">
+            </div>
+          </div>
+          <div class="contact-card__content">
+            <h3>Linus Andersson</h3>
+            <p>Plåtslagare</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-card">
+          <div class="contact-card__img">
+            <div class="contact-card__img-wrapper">
+              <img src="./assets/staff/Emil Thomasson.png">
+            </div>
+          </div>
+          <div class="contact-card__content">
+            <h3>Emil Thomasson</h3>
+            <p>Plåtslagare</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      </div>
+      <div class="section-content">
+        <h2>Hitta till oss</h2>
+        <div class="section-content__findUs">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d830.3255437660231!2d15.045592991644623!3d59.12107514204667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c72c575887285%3A0x18920c27de8cd0c1!2sJulsta%20532%2C%20692%2093%20Kumla!5e1!3m2!1ssv!2sse!4v1742240948232!5m2!1ssv!2sse"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-container-colums">
+        <div class="footer-column">
+          <h2>Julsta Plåtslageri AB</h2>
+          <div class="footer-logo">
+            <p>Organisationsnummer: <code>559090-7761</code></p>
+            <img src="./assets/logo/logo.webp" alt="logotyp för företaget" />
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Kontakt</h3>
+          <div class="footer-contact">
+            <div>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+46708240040">070-824 00 40</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:example@example.com">johan@julstaplatslageri.se</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <a href="https://maps.app.goo.gl/FcVPWoUhqi2QPki37" target="_blank">Julsta Esplunda 532, 69293 Kumla</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h2>Sociala medier</h2>
+          <div class="footer-social-icons">
+            <a href="https://www.facebook.com/share/1EiE6FBZFQ/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-square" aria-hidden="true"></i>
+              <p>Julsta Plåtslageri på Facebook</p>
+            </a>
+            <a href="https://www.instagram.com/julsta_platslageri?igsh=ajk3YjlqMmlhbGpw&utm_source=qr" target="_blank"
+              aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+              <p>Julsta Plåtslageri på Instagram</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container-text">
+        <p>© Copyright 2025</p>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+
 </html>

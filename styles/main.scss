@@ -1,11 +1,9 @@
-@import "variables.scss";
+@use "variables" as *;
 
-@import 
-"components/body.scss", 
-"components/header.scss", 
-"components/footer.scss",
-"components/section.scss", 
-"components/section-home.scss",
-"components/services.scss",
-"components/body.scss";
+@use "components/body" as *;
+@use "components/header" as *;
+@use "components/footer" as *;
+@use "components/section" as *;
+@use "components/section-home" as *;
+@use "components/services" as *;
 
